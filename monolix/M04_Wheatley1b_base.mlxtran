@@ -1,0 +1,60 @@
+<DATAFILE>
+
+[FILEINFO]
+file='Wheatley-data-Fig1b.csv'
+delimiter = comma
+header = {ID, TIME, DV, CENS, LIMIT, REP}
+
+[CONTENT]
+ID = {use=identifier}
+TIME = {use=time}
+DV = {use=observation, name=DV, type=continuous}
+CENS = {use=censored}
+LIMIT = {use=limit}
+
+<MODEL>
+
+[INDIVIDUAL]
+input = {T0_pop, kel1_pop, omega_kel1, kel2_pop, omega_kel2, y0_pop, omega_y0}
+
+DEFINITION:
+T0 = {distribution=logNormal, typical=T0_pop, no-variability}
+kel1 = {distribution=logNormal, typical=kel1_pop, sd=omega_kel1}
+kel2 = {distribution=logNormal, typical=kel2_pop, sd=omega_kel2}
+y0 = {distribution=logNormal, typical=y0_pop, sd=omega_y0}
+
+[LONGITUDINAL]
+input = {a}
+
+file = 'models/M04_piecewise_2_decay.txt'
+
+DEFINITION:
+DV = {distribution=logNormal, prediction=Y, errorModel=constant(a)}
+
+<FIT>
+data = DV
+model = DV
+
+<PARAMETER>
+T0_pop = {value=50, method=MLE}
+a = {value=0.15, method=FIXED}
+kel1_pop = {value=0.01, method=MLE}
+kel2_pop = {value=0.001, method=MLE}
+omega_kel1 = {value=1, method=MLE}
+omega_kel2 = {value=1, method=MLE}
+omega_y0 = {value=1, method=MLE}
+y0_pop = {value=100, method=MLE}
+
+<MONOLIX>
+
+[TASKS]
+populationParameters()
+individualParameters(method = {conditionalMean, conditionalMode })
+fim(method = StochasticApproximation)
+logLikelihood(method = ImportanceSampling)
+plotResult(method = {indfits, parameterdistribution, covariancemodeldiagnosis, covariatemodeldiagnosis, obspred, vpc, residualsscatter, residualsdistribution, randomeffects, blq, saemresults })
+
+[SETTINGS]
+GLOBAL:
+exportpath = 'M04_Wheatley1b_base'
+

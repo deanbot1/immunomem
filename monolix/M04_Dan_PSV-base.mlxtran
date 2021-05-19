@@ -1,0 +1,64 @@
+<DATAFILE>
+
+[FILEINFO]
+file='PSV-neut-titer-2t.csv'
+delimiter = comma
+header = {X_, Donor_ID, Age, Gender, Ethnicity, Race, Days_PSO, Peak_Disease_Severity_Clinical_Score_, Peak_Disease_Severity_Category_, PCR_resuls, DV, CENS, LIMIT, ID}
+
+[CONTENT]
+X_ = {use=regressor}
+Donor_ID = {use=identifier}
+Age = {use=covariate, type=continuous}
+Gender = {use=covariate, type=categorical}
+Race = {use=covariate, type=categorical}
+Days_PSO = {use=time}
+DV = {use=observation, name=DV, type=continuous}
+CENS = {use=censored}
+LIMIT = {use=limit}
+
+<MODEL>
+
+[INDIVIDUAL]
+input = {y0_pop, omega_y0, T0_pop, kel1_pop, omega_kel1, kel2_pop, omega_kel2}
+
+DEFINITION:
+y0 = {distribution=logNormal, typical=y0_pop, sd=omega_y0}
+T0 = {distribution=logNormal, typical=T0_pop, no-variability}
+kel1 = {distribution=logNormal, typical=kel1_pop, sd=omega_kel1}
+kel2 = {distribution=logNormal, typical=kel2_pop, sd=omega_kel2}
+
+[LONGITUDINAL]
+input = {a}
+
+file = 'models/M04_piecewise_2_decay.txt'
+
+DEFINITION:
+DV = {distribution=logNormal, prediction=Y, errorModel=constant(a)}
+
+<FIT>
+data = DV
+model = DV
+
+<PARAMETER>
+T0_pop = {value=80, method=MLE}
+a = {value=0.15, method=FIXED}
+kel1_pop = {value=0.01, method=MLE}
+kel2_pop = {value=0.001, method=MLE}
+omega_kel1 = {value=1, method=MLE}
+omega_kel2 = {value=1, method=MLE}
+omega_y0 = {value=1, method=MLE}
+y0_pop = {value=100, method=MLE}
+
+<MONOLIX>
+
+[TASKS]
+populationParameters()
+individualParameters(method = {conditionalMean, conditionalMode })
+fim(method = StochasticApproximation)
+logLikelihood(method = ImportanceSampling)
+plotResult(method = {indfits, parameterdistribution, covariancemodeldiagnosis, covariatemodeldiagnosis, obspred, vpc, residualsscatter, residualsdistribution, randomeffects, blq, saemresults })
+
+[SETTINGS]
+GLOBAL:
+exportpath = 'M04_Dan_2-timepoints-base'
+

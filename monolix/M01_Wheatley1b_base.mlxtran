@@ -1,0 +1,55 @@
+<DATAFILE>
+
+[FILEINFO]
+file='Wheatley-data-Fig1b.csv'
+delimiter = comma
+header = {ID, TIME, DV, CENS, LIMIT, REP}
+
+[CONTENT]
+ID = {use=identifier}
+TIME = {use=time}
+DV = {use=observation, name=DV, type=continuous}
+CENS = {use=censored}
+LIMIT = {use=limit}
+
+<MODEL>
+
+[INDIVIDUAL]
+input = {y0_pop, omega_y0, kel_pop, omega_kel}
+
+DEFINITION:
+y0 = {distribution=logNormal, typical=y0_pop, sd=omega_y0}
+kel = {distribution=logNormal, typical=kel_pop, sd=omega_kel}
+
+[LONGITUDINAL]
+input = {a}
+
+file = 'models/M01_single_exponential.txt'
+
+DEFINITION:
+DV = {distribution=logNormal, prediction=Y, errorModel=constant(a)}
+
+<FIT>
+data = DV
+model = DV
+
+<PARAMETER>
+a = {value=0.15, method=FIXED}
+kel_pop = {value=0.01, method=MLE}
+omega_kel = {value=1, method=MLE}
+omega_y0 = {value=1, method=MLE}
+y0_pop = {value=100, method=MLE}
+
+<MONOLIX>
+
+[TASKS]
+populationParameters()
+individualParameters(method = {conditionalMean, conditionalMode })
+fim(method = StochasticApproximation)
+logLikelihood(method = ImportanceSampling)
+plotResult(method = {indfits, parameterdistribution, covariancemodeldiagnosis, covariatemodeldiagnosis, obspred, vpc, residualsscatter, residualsdistribution, randomeffects, blq, saemresults })
+
+[SETTINGS]
+GLOBAL:
+exportpath = 'M01_Wheatley1b_base'
+

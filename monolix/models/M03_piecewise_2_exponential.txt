@@ -1,0 +1,15 @@
+; structural model for fig4D in crotty paper
+
+INPUT:
+input = {y0,kin,Tin,kel}
+
+EQUATION:
+if t < Tin
+	Y = y0*exp((kin-kel)*t)
+else
+	Y =  y0*exp((kin-kel)*Tin)*exp(-kel*(t-Tin))
+end
+
+
+OUTPUT:
+output = {Y}

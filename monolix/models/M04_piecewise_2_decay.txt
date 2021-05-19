@@ -1,0 +1,15 @@
+; structural model used in wheatley et al
+
+INPUT:
+input = {y0,T0,kel1,kel2}
+
+EQUATION:
+if t < T0
+	Y = y0*exp(-kel1*t)
+else
+	Y =  y0*exp(-kel1*T0)*exp(-kel2*(t-T0))
+end
+
+
+OUTPUT:
+output = {Y}

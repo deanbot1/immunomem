@@ -1,0 +1,92 @@
+"X.","Donor.ID","Age","Gender","Ethnicity","Race","Days.PSO","Peak.Disease.Severity..Clinical.Score.","Peak.Disease.Severity..Category.","PCR.resuls","DV","CENS","LIMIT","ID"
+2,4732,44,"M","Not Hispanic or Latino","White",120,2,"Mild","ND",20,1,0,4732
+207,4732,44,"M","Not Hispanic or Latino","White",216,2,"Mild","ND",50.5,0,0,4732
+3,4745,44,"F","Not Hispanic or Latino","White",123,2,"Mild","PCR+",44.6,0,0,4745
+208,4745,44,"F","Not Hispanic or Latino","White",221,2,"Mild","PCR+",50.6,0,0,4745
+4,4746,45,"M","Not Hispanic or Latino","White",22,3,"Mild","PCR+",465.8,0,0,4746
+5,4746,45,"M","Not Hispanic or Latino","White",118,3,"Mild","PCR+",35.6,0,0,4746
+209,4746,45,"M","Not Hispanic or Latino","White",218,3,"Mild","PCR+",20,1,0,4746
+6,4747,43,"F","Not Hispanic or Latino","White",25,2,"Mild","PCR+",304,0,0,4747
+7,4747,43,"F","Not Hispanic or Latino","White",121,2,"Mild","PCR+",79.1,0,0,4747
+210,4747,43,"F","Not Hispanic or Latino","White",221,2,"Mild","PCR+",39.8,0,0,4747
+9,4764,32,"M","Not Hispanic or Latino","White",24,2,"Mild","PCR+",62.4,0,0,4764
+10,4764,32,"M","Not Hispanic or Latino","White",139,2,"Mild","PCR+",111.6,0,0,4764
+11,4765,42,"M","Hispanic or Latino","White",27,2,"Mild","PCR+",5899,0,0,4765
+12,4765,42,"M","Hispanic or Latino","White",127,2,"Mild","PCR+",1265,0,0,4765
+227,4765,42,"M","Hispanic or Latino","White",225,2,"Mild","PCR+",777.3,0,0,4765
+13,4766,51,"M","Not Hispanic or Latino","White",34,2,"Mild","PCR+",37,0,0,4766
+14,4766,51,"M","Not Hispanic or Latino","White",134,2,"Mild","PCR+",20,1,0,4766
+15,4767,40,"F","Not Hispanic or Latino","White",21,2,"Mild","PCR+",416.3,0,0,4767
+16,4767,40,"F","Not Hispanic or Latino","White",126,2,"Mild","PCR+",113.6,0,0,4767
+220,4767,40,"F","Not Hispanic or Latino","White",212,2,"Mild","PCR+",116,0,0,4767
+17,4768,43,"F","Not Hispanic or Latino","White",30,2,"Mild","PCR+",137.1,0,0,4768
+18,4768,43,"F","Not Hispanic or Latino","White",134,2,"Mild","PCR+",178.5,0,0,4768
+226,4768,43,"F","Not Hispanic or Latino","White",228,2,"Mild","PCR+",137.5,0,0,4768
+19,4772,55,"F","Not Hispanic or Latino","White",30,2,"Mild","PCR+",33.2,0,0,4772
+20,4772,55,"F","Not Hispanic or Latino","White",142,2,"Mild","PCR+",20,1,0,4772
+233,4772,55,"F","Not Hispanic or Latino","White",233,2,"Mild","PCR+",42.3,0,0,4772
+22,4774,64,"M","Not Hispanic or Latino","White",33,2,"Mild","PCR+",238.7,0,0,4774
+23,4774,64,"M","Not Hispanic or Latino","White",129,2,"Mild","PCR+",44.7,0,0,4774
+212,4774,64,"M","Not Hispanic or Latino","White",187,2,"Mild","PCR+",23.8,0,0,4774
+29,4797,62,"F","Not Hispanic or Latino","White",32,3,"Mild","PCR+",293.5,0,0,4797
+30,4797,62,"F","Not Hispanic or Latino","White",159,3,"Mild","PCR+",66.6,0,0,4797
+32,4801,59,"M","Not Hispanic or Latino","White",47,3,"Mild","PCR+",168.5,0,0,4801
+33,4801,59,"M","Not Hispanic or Latino","White",146,3,"Mild","PCR+",113,0,0,4801
+38,4842,49,"M","Not Hispanic or Latino","White",39,9,"Severe","PCR+",808.7,0,0,4842
+39,4842,49,"M","Not Hispanic or Latino","White",132,9,"Severe","PCR+",428,0,0,4842
+218,4842,49,"M","Not Hispanic or Latino","White",209,9,"Severe","ND",276.1,0,0,4842
+42,4848,56,"M","Not Hispanic or Latino","White",43,6,"Severe","ND",3607,0,0,4848
+43,4848,56,"M","Not Hispanic or Latino","White",136,6,"Severe","ND",287.9,0,0,4848
+44,4849,29,"F","Not Hispanic or Latino","White",43,5,"Moderate","ND",1135,0,0,4849
+171,4849,29,"F","Not Hispanic or Latino","White",189,5,"Moderate","ND",605.3,0,0,4849
+47,4853,49,"M","Not Hispanic or Latino","White",47,2,"Mild","PCR+",273.1,0,0,4853
+48,4853,49,"M","Not Hispanic or Latino","White",131,2,"Mild","PCR+",85.8,0,0,4853
+55,4867,26,"F","Not Hispanic or Latino","White",64,8,"Severe","PCR+",664.4,0,0,4867
+56,4867,26,"F","Not Hispanic or Latino","White",150,8,"Severe","PCR+",396.7,0,0,4867
+58,4869,36,"F","Unknown","Unknown or Not Reported",37,2,"Mild","PCR+",35,0,0,4869
+205,4869,36,"F","Unknown","Unknown or Not Reported",179,2,"Mild","PCR+",67.4,0,0,4869
+62,4877,49,"M","Hispanic or Latino","White",52,3,"Mild","ND",25.8,0,0,4877
+213,4877,49,"M","Hispanic or Latino","White",151,3,"Mild","ND",20,1,0,4877
+204,4877,49,"M","Hispanic or Latino","White",191,3,"Mild","ND",24.2,0,0,4877
+63,4878,46,"F","Not Hispanic or Latino","White",63,5,"Moderate","ND",2127,0,0,4878
+64,4878,46,"F","Not Hispanic or Latino","White",139,5,"Moderate","ND",755.9,0,0,4878
+68,4882,61,"F","Not Hispanic or Latino","White",60,3,"Mild","PCR+",55.9,0,0,4882
+69,4882,61,"F","Not Hispanic or Latino","White",138,3,"Mild","PCR+",38.7,0,0,4882
+74,4887,60,"F","Not Hispanic or Latino","White",71,3,"Mild","PCR+",110.1,0,0,4887
+75,4887,60,"F","Not Hispanic or Latino","White",127,3,"Mild","PCR+",119.7,0,0,4887
+76,4924,42,"F","Not Hispanic or Latino","White",36,3,"Mild","PCR+",442.3,0,0,4924
+77,4924,42,"F","Not Hispanic or Latino","White",111,3,"Mild","PCR+",85.3,0,0,4924
+78,4927,34,"M","Not Hispanic or Latino","White",65,2,"Mild","PCR+",66.3,0,0,4927
+137,4927,34,"M","Not Hispanic or Latino","White",163,2,"Mild","PCR+",20,1,0,4927
+211,4931,57,"F","Not Hispanic or Latino","White",69,2,"Mild","PCR+",345.7,0,0,4931
+172,4931,57,"F","Not Hispanic or Latino","White",188,2,"Mild","PCR+",218.6,0,0,4931
+79,4935,43,"M","Not Hispanic or Latino","White",66,3,"Mild","PCR+",25.4,0,0,4935
+175,4935,43,"M","Not Hispanic or Latino","White",184,3,"Mild","PCR+",20,1,0,4935
+80,4937,50,"M","Not Hispanic or Latino","White",79,2,"Mild","PCR+",946.7,0,0,4937
+165,4937,50,"M","Not Hispanic or Latino","White",191,2,"Mild","PCR+",318.7,0,0,4937
+84,4953,28,"M","Not Hispanic or Latino","Asian",81,2,"Mild","PCR+",540.2,0,0,4953
+174,4953,28,"M","Not Hispanic or Latino","Asian",184,2,"Mild","PCR+",167.2,0,0,4953
+86,4955,64,"M","Not Hispanic or Latino","White",79,2,"Mild","ND",52,0,0,4955
+138,4955,64,"M","Not Hispanic or Latino","White",170,2,"Mild","ND",28,0,0,4955
+88,4962,40,"M","Not Hispanic or Latino","White",70,3,"MIld","PCR+",713.4,0,0,4962
+231,4962,40,"M","Not Hispanic or Latino","White",210,3,"Mild","ND",71.6,0,0,4962
+91,4966,44,"F","Not Hispanic or Latino","White",93,3,"Mild","PCR+",73.4,0,0,4966
+170,4966,44,"F","Not Hispanic or Latino","White",189,3,"Mild","PCR+",37.1,0,0,4966
+94,4973,30,"M","Not Hispanic or Latino","White",91,3,"Mild","PCR+",76.6,0,0,4973
+167,4973,30,"M","Not Hispanic or Latino","White",184,3,"Mild","PCR+",41.7,0,0,4973
+96,4976,41,"F","Not Hispanic or Latino","Black or African American",87,2,"Mild","PCR+",131.3,0,0,4976
+176,4976,41,"F","Not Hispanic or Latino","Black or African American",178,2,"Mild","PCR+",59.3,0,0,4976
+103,4985,47,"M","Not Hispanic or Latino","White",96,2,"Mild","PCR+",212.7,0,0,4985
+173,4985,47,"M","Not Hispanic or Latino","White",187,2,"Mild","PCR+",123.1,0,0,4985
+105,4989,46,"F","Not Hispanic or Latino","White",102,2,"Mild","PCR+",78.3,0,0,4989
+166,4989,46,"F","Not Hispanic or Latino","White",179,2,"Mild","PCR+",101.4,0,0,4989
+112,4999,55,"M","Hispanic or Latino","White",97,8,"Severe","PCR+",414.2,0,0,4999
+168,4999,55,"M","Hispanic or Latino","White",178,8,"Severe","PCR+",459.7,0,0,4999
+120,5099,32,"F","Not Hispanic or Latino","White",84,2,"Mild","ND",28.2,0,0,5099
+232,5099,32,"F","Not Hispanic or Latino","White",191,2,"Mild","ND",20,1,0,5099
+130,5116,29,"M","Hispanic or Latino","Unknown or Not Reported",129,5,"Moderate","ND",421.8,0,0,5116
+140,5116,29,"M","Hispanic or Latino","Unknown or Not Reported",172,5,"Moderate","ND",166.8,0,0,5116
+135,5165,44,"F","Not Hispanic or Latino","White",163,2,"Mild","PCR+",112.9,0,0,5165
+225,5165,44,"F","Not Hispanic or Latino","White",240,2,"Mild","ND",47.3,0,0,5165
+181,5352,27,"M","Unknown","White",91,2,"Mild","PCR-",152.7,0,0,5352
+182,5352,27,"M","Unknown","White",160,2,"Mild","PCR-",74.3,0,0,5352

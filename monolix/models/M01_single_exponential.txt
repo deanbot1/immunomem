@@ -1,0 +1,10 @@
+; structural model for fig4D in crotty paper
+
+INPUT:
+input = {y0,kel}
+
+EQUATION:
+Y = y0*exp(-kel*t)
+
+OUTPUT:
+output = {Y}
